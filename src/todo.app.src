@@ -1,11 +1,17 @@
+% -*-mode:erlang-*-
 {application, todo,
  [
   {description, ""},
-  {vsn, "1"},
+  {vsn, "0.1.0"},
+  {modules, []},
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  envy,
+                  epgsql,
+                  pooler,
+                  sqerl
                  ]},
   {mod, { todo_app, []}},
   {env, []}
